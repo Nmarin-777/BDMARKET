@@ -1,0 +1,130 @@
+-- 1. Elimina la base de datos G3 si existe
+IF EXISTS (SELECT name FROM sys.databases WHERE name = N'G3')
+BEGIN
+    ALTER DATABASE G3 SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+    DROP DATABASE G3;
+END
+GO
+
+-- 2. Crea el esquema G3 si no existe
+IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'G3')
+BEGIN
+    EXEC('CREATE SCHEMA G3');
+END
+GO
+
+-- 3. Elimina las tablas existentes en el esquema G3 en el orden correcto para evitar conflictos de claves foráneas
+DROP TABLE IF EXISTS G3.[PRODUCTOS X VENTA];
+DROP TABLE IF EXISTS G3.VENTA;
+DROP TABLE IF EXISTS G3.[MEDIO DE PAGO];
+DROP TABLE IF EXISTS G3.EMPLEADO;
+DROP TABLE IF EXISTS G3.PRODUCTO;
+DROP TABLE IF EXISTS G3.PROVEEDOR;
+DROP TABLE IF EXISTS G3.CATEGORIA;
+DROP TABLE IF EXISTS G3.PRESENTACION;
+GO
+
+-- 4. Crea las tablas y sus relaciones
+CREATE TABLE G3.CATEGORIA (
+    IdCategoria INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    NomCategoria VARCHAR(50) NULL,
+    Descripción VARCHAR(200) NULL
+);
+GO
+
+CREATE TABLE G3.PRESENTACION (
+    IdPresentacion INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    Descripcion VARCHAR(100) NULL
+);
+GO
+
+CREATE TABLE G3.PROVEEDOR (
+    IdProveedor INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    Rsocial VARCHAR(255) NULL,
+    NomContacto VARCHAR(50) NULL,
+    CargoContacto VARCHAR(50) NULL,
+    Direccion VARCHAR(100) NULL,
+    Distrito VARCHAR(50) NULL,
+    Telefono INT NULL
+);
+GO
+
+CREATE TABLE G3.PRODUCTO (
+    IdProducto INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    NomProducto VARCHAR(100) NULL,
+    IdProveedor INT NULL,
+    IdCategoria INT NULL,
+    TipoUnidad VARCHAR(50) NULL,
+    CantidadUnidad INT NULL,
+    CostoUnidad DECIMAL(6,2) NULL,
+    PrecioUnidad DECIMAL(6,2) NULL,
+    IdPresentacion INT NULL,
+    FOREIGN KEY (IdProveedor) REFERENCES G3.PROVEEDOR(IdProveedor),
+    FOREIGN KEY (IdCategoria) REFERENCES G3.CATEGORIA(IdCategoria),
+    FOREIGN KEY (IdPresentacion) REFERENCES G3.PRESENTACION(IdPresentacion)
+);
+GO
+
+CREATE TABLE G3.EMPLEADO (
+    IdEmpleado INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    ApEmpleado VARCHAR(50) NULL,
+    NomEmpleado VARCHAR(50) NULL,
+    Cargo VARCHAR(50) NULL,
+    FechaNac DATE NULL,
+    FechaContrato DATE NULL,
+    Direccion VARCHAR(100) NULL,
+    Distrito VARCHAR(50) NULL,
+    Telefono VARCHAR(50) NULL
+);
+GO
+
+CREATE TABLE G3.[MEDIO DE PAGO] (
+    IdMedioDePago INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    MedioDePago VARCHAR(50) NULL
+);
+GO
+
+CREATE TABLE G3.VENTA (
+    IdVenta INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    IdEmpleado INT NULL,
+    FechaVenta DATE NULL,
+    HoraVenta TIME NULL,
+    IdMedioDePago INT NULL,
+    FOREIGN KEY (IdEmpleado) REFERENCES G3.EMPLEADO(IdEmpleado),
+    FOREIGN KEY (IdMedioDePago) REFERENCES G3.[MEDIO DE PAGO](IdMedioDePago)
+);
+GO
+
+CREATE TABLE G3.[PRODUCTOS X VENTA] (
+    IdProductosXVenta INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    IdProducto INT NULL,
+    IdVenta INT NULL,
+    PrecioFinal DECIMAL(6,2) NULL,
+    Cantidad INT NULL,
+    FOREIGN KEY (IdProducto) REFERENCES G3.PRODUCTO(IdProducto),
+    FOREIGN KEY (IdVenta) REFERENCES G3.VENTA(IdVenta)
+);
+GO
+
+
+-- Selecciona la base de datos correcta
+USE ucdatascience;
+GO
+
+
+-- Mostrar datos de tablas
+SELECT * FROM G3.PROVEEDOR 
+
+SELECT * FROM G3.CATEGORIA 
+
+SELECT * FROM G3.PRESENTACION 
+
+SELECT * FROM G3.EMPLEADO 
+
+SELECT * FROM G3.[MEDIO DE PAGO] 
+
+SELECT * FROM G3.PRODUCTO 
+
+SELECT * FROM G3.[PRODUCTOS X VENTA] 
+
+SELECT * FROM G3.VENTA
