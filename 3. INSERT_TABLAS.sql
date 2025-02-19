@@ -75,7 +75,7 @@ VALUES
 ('Queso Paria Laive', 4, 3, 'Gramos', 8, 9.76, 11.9, 1),
 ('Aceite Vegetal Primor', 1, 1, 'Mililitros', 3, 33, 47.1, 5),
 ('Fideos Molitalia', 1, 1, 'Gramos', 55, 1.3, 2, 3),
-('Jabón Liquido Aval', 8, 8, 'Litros', 7, 10, 12.6, 3),
+('Jabón Liquido Aval', 8, 5, 'Litros', 7, 10, 12.6, 3),
 ('Shampoo Pantene', 9, 5, 'Mililitros', 14, 17, 20.9, 3),
 ('Desodorante Nivea', 9, 5, 'Gramos', 1, 10, 13.9, 1),
 ('Yogurt Griego', 3, 2, 'Gramos', 12, 12, 15.9, 5),

@@ -1,5 +1,7 @@
+--Inserción de datos en la tabla PRODUCTOS_X_VENTA, con un total de 40,200 filas.
+--PARTE 1
 INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
-VALUES 
+VALUES
 (1, 1, 30, 3),
 (4, 1, 4.5, 3),
 (28, 1, 10, 2),
@@ -999,7 +1001,11 @@ VALUES
 (45, 257, 16, 2),
 (46, 257, 69.8, 2),
 (76, 257, 7.3, 1),
-(78, 257, 41.8, 2),
+(78, 257, 41.8, 2);
+
+--PARTE 2
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (16, 258, 6.4, 1),
 (31, 258, 7, 2),
 (54, 258, 14.7, 3),
@@ -1999,7 +2005,11 @@ VALUES
 (60, 494, 3.9, 3),
 (68, 494, 57.4, 1),
 (73, 494, 7.2, 3),
-(77, 494, 49.9, 1),
+(77, 494, 49.9, 1);
+
+--PARTE 3
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (3, 495, 18, 3),
 (3, 495, 18, 3),
 (41, 495, 62.7, 3),
@@ -2999,7 +3009,11 @@ VALUES
 (10, 740, 13.8, 3),
 (27, 740, 20, 2),
 (30, 740, 13.5, 3),
-(50, 740, 3.8, 1),
+(50, 740, 3.8, 1);
+
+--PARTE 4
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (61, 740, 5.7, 1),
 (63, 740, 6.1, 1),
 (2, 741, 1.5, 1),
@@ -3999,7 +4013,12 @@ VALUES
 (58, 988, 10.5, 1),
 (78, 988, 41.8, 2),
 (2, 989, 4.5, 3),
-(15, 989, 7.8, 2),
+(15, 989, 7.8, 2);
+
+
+--PARTE 5
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (20, 989, 6, 2),
 (43, 989, 15.9, 1),
 (23, 990, 16.2, 3),
@@ -4999,7 +5018,12 @@ VALUES
 (33, 1231, 4.5, 3),
 (56, 1231, 59.4, 3),
 (56, 1231, 19.8, 1),
-(57, 1231, 19.4, 2),
+(57, 1231, 19.4, 2);
+
+
+--PARTE 6
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (68, 1231, 172.2, 3),
 (16, 1232, 19.2, 3),
 (31, 1232, 3.5, 1),
@@ -5999,7 +6023,12 @@ VALUES
 (63, 1488, 18.3, 3),
 (64, 1488, 14.4, 2),
 (8, 1489, 28.7, 1),
-(10, 1489, 4.6, 1),
+(10, 1489, 4.6, 1);
+
+
+--PARTE 7
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (32, 1489, 26, 2),
 (54, 1489, 9.8, 2),
 (76, 1489, 21.9, 3),
@@ -6999,7 +7028,12 @@ VALUES
 (78, 1747, 20.9, 1),
 (42, 1748, 41.7, 3),
 (21, 1749, 6, 3),
-(34, 1749, 43.8, 2),
+(34, 1749, 43.8, 2);
+
+
+--PARTE 8
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (47, 1749, 50.7, 3),
 (15, 1750, 3.9, 1),
 (24, 1750, 26.7, 3),
@@ -7999,7 +8033,12 @@ VALUES
 (39, 2004, 2, 1),
 (51, 2004, 51.8, 2),
 (51, 2004, 25.9, 1),
-(59, 2004, 14.7, 3),
+(59, 2004, 14.7, 3);
+
+
+--PARTE 9
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (61, 2004, 5.7, 1),
 (67, 2004, 21.6, 2),
 (10, 2005, 13.8, 3),
@@ -8999,7 +9038,11 @@ VALUES
 (18, 2255, 12.9, 1),
 (20, 2255, 9, 3),
 (43, 2255, 47.7, 3),
-(55, 2255, 13.99, 1),
+(55, 2255, 13.99, 1);
+
+--PARTE 10
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (71, 2255, 26, 2),
 (79, 2255, 13.9, 1),
 (4, 2256, 1.5, 1),
@@ -9999,7 +10042,11 @@ VALUES
 (47, 2500, 16.9, 1),
 (63, 2500, 6.1, 1),
 (64, 2500, 7.2, 1),
-(64, 2500, 7.2, 1),
+(64, 2500, 7.2, 1);
+
+--PARTE 11
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (15, 2501, 11.7, 3),
 (1, 2502, 30, 3),
 (3, 2502, 6, 1),
@@ -10999,7 +11046,11 @@ VALUES
 (69, 2748, 12.5, 1),
 (69, 2748, 12.5, 1),
 (30, 2749, 13.5, 3),
-(44, 2749, 68.7, 3),
+(44, 2749, 68.7, 3);
+
+--PARTE 12
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (69, 2749, 25, 2),
 (16, 2750, 19.2, 3),
 (40, 2750, 12.6, 1),
@@ -11999,7 +12050,12 @@ VALUES
 (18, 2998, 25.8, 2),
 (19, 2998, 6.5, 1),
 (27, 2998, 20, 2),
-(29, 2998, 2, 1),
+(29, 2998, 2, 1);
+
+
+--PARTE 13
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (42, 2998, 13.9, 1),
 (48, 2998, 41.1, 3),
 (49, 2998, 9, 2),
@@ -12999,7 +13055,12 @@ VALUES
 (20, 3249, 9, 3),
 (33, 3249, 3, 2),
 (72, 3249, 45, 2),
-(3, 3250, 6, 1),
+(3, 3250, 6, 1);
+
+
+--PARTE 14
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (44, 3250, 68.7, 3),
 (55, 3250, 41.97, 3),
 (57, 3250, 19.4, 2),
@@ -13999,7 +14060,12 @@ VALUES
 (76, 3496, 7.3, 1),
 (27, 3497, 30, 3),
 (33, 3497, 4.5, 3),
-(46, 3497, 69.8, 2),
+(46, 3497, 69.8, 2);
+
+
+--PARTE 15
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (69, 3497, 12.5, 1),
 (76, 3497, 14.6, 2),
 (16, 3498, 6.4, 1),
@@ -14999,7 +15065,11 @@ VALUES
 (34, 3738, 43.8, 2),
 (36, 3738, 13.2, 3),
 (57, 3738, 29.1, 3),
-(70, 3738, 5.5, 1),
+(70, 3738, 5.5, 1);
+
+--PARTE 16
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (22, 3739, 7, 2),
 (35, 3739, 12.49, 1),
 (66, 3739, 23.8, 2),
@@ -15999,7 +16069,12 @@ VALUES
 (30, 3992, 9, 2),
 (50, 3992, 3.8, 1),
 (67, 3992, 10.8, 1),
-(21, 3993, 2, 1),
+(21, 3993, 2, 1);
+
+
+--PARTE 17
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (25, 3993, 18.9, 1),
 (33, 3993, 4.5, 3),
 (52, 3993, 34.4, 2),
@@ -16999,7 +17074,11 @@ VALUES
 (22, 4249, 3.5, 1),
 (64, 4249, 14.4, 2),
 (76, 4249, 7.3, 1),
-(78, 4249, 62.7, 3),
+(78, 4249, 62.7, 3);
+
+--PARTE 18
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (16, 4250, 19.2, 3),
 (42, 4250, 27.8, 2),
 (73, 4250, 4.8, 2),
@@ -17999,7 +18078,12 @@ VALUES
 (20, 4513, 3, 1),
 (6, 4514, 13.5, 3),
 (53, 4514, 19.2, 3),
-(80, 4514, 19.8, 2),
+(80, 4514, 19.8, 2);
+
+
+--PARTE 19
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (4, 4515, 3, 2),
 (33, 4515, 4.5, 3),
 (71, 4515, 39, 3),
@@ -18999,7 +19083,11 @@ VALUES
 (61, 4757, 5.7, 1),
 (68, 4757, 57.4, 1),
 (69, 4757, 25, 2),
-(71, 4757, 26, 2),
+(71, 4757, 26, 2);
+
+--PARTE 20
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (5, 4758, 21, 2),
 (9, 4758, 14.7, 3),
 (10, 4758, 4.6, 1),
@@ -19999,7 +20087,11 @@ VALUES
 (16, 5007, 6.4, 1),
 (19, 5007, 6.5, 1),
 (21, 5007, 6, 3),
-(34, 5007, 43.8, 2),
+(34, 5007, 43.8, 2);
+
+--PARTE 21
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (51, 5007, 25.9, 1),
 (58, 5007, 21, 2),
 (67, 5007, 32.4, 3),
@@ -20999,7 +21091,11 @@ VALUES
 (24, 5256, 17.8, 2),
 (42, 5256, 13.9, 1),
 (46, 5256, 104.7, 3),
-(47, 5256, 33.8, 2),
+(47, 5256, 33.8, 2);
+
+--PARTE 22
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (65, 5256, 8.5, 1),
 (53, 5257, 6.4, 1),
 (53, 5257, 19.2, 3),
@@ -21999,7 +22095,11 @@ VALUES
 (46, 5504, 69.8, 2),
 (47, 5504, 16.9, 1),
 (4, 5505, 4.5, 3),
-(6, 5505, 13.5, 3),
+(6, 5505, 13.5, 3);
+
+--PARTE 23
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (9, 5505, 14.7, 3),
 (35, 5505, 12.49, 1),
 (47, 5505, 16.9, 1),
@@ -22999,7 +23099,12 @@ VALUES
 (63, 5733, 6.1, 1),
 (72, 5733, 67.5, 3),
 (16, 5734, 6.4, 1),
-(53, 5734, 6.4, 1),
+(53, 5734, 6.4, 1);
+
+
+--PARTE 24
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (71, 5734, 39, 3),
 (27, 5735, 30, 3),
 (39, 5735, 2, 1),
@@ -23999,7 +24104,11 @@ VALUES
 (52, 5965, 17.2, 1),
 (59, 5965, 4.9, 1),
 (14, 5966, 6, 1),
-(16, 5966, 19.2, 3),
+(16, 5966, 19.2, 3);
+
+--PARTE 25
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (49, 5966, 9, 2),
 (57, 5966, 19.4, 2),
 (4, 5967, 3, 2),
@@ -24999,7 +25108,11 @@ VALUES
 (53, 6201, 6.4, 1),
 (54, 6201, 14.7, 3),
 (77, 6201, 49.9, 1),
-(13, 6202, 4.4, 1),
+(13, 6202, 4.4, 1);
+
+--PARTE 26
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (19, 6202, 19.5, 3),
 (29, 6202, 4, 2),
 (75, 6202, 3.3, 1),
@@ -25999,7 +26112,12 @@ VALUES
 (17, 6458, 12.8, 2),
 (2, 6459, 1.5, 1),
 (5, 6459, 10.5, 1),
-(26, 6459, 10, 2),
+(26, 6459, 10, 2);
+
+
+--PARTE 27
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (29, 6459, 2, 1),
 (38, 6459, 47.1, 1),
 (16, 6460, 19.2, 3),
@@ -26999,7 +27117,11 @@ VALUES
 (37, 6702, 35.7, 3),
 (4, 6703, 1.5, 1),
 (17, 6703, 6.4, 1),
-(29, 6703, 2, 1),
+(29, 6703, 2, 1);
+
+--PARTE 28
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (49, 6703, 4.5, 1),
 (59, 6703, 9.8, 2),
 (8, 6704, 28.7, 1),
@@ -27999,7 +28121,11 @@ VALUES
 (63, 6952, 6.1, 1),
 (17, 6953, 6.4, 1),
 (67, 6953, 32.4, 3),
-(76, 6953, 14.6, 2),
+(76, 6953, 14.6, 2);
+
+--PARTE 29
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (20, 6954, 6, 2),
 (46, 6954, 104.7, 3),
 (58, 6954, 31.5, 3),
@@ -28999,7 +29125,12 @@ VALUES
 (14, 7203, 6, 1),
 (30, 7203, 13.5, 3),
 (36, 7203, 8.8, 2),
-(47, 7203, 50.7, 3),
+(47, 7203, 50.7, 3);
+
+
+--PARTE 30
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (52, 7203, 51.6, 3),
 (68, 7203, 172.2, 3),
 (10, 7204, 13.8, 3),
@@ -29999,7 +30130,11 @@ VALUES
 (39, 7471, 2, 1),
 (39, 7471, 2, 1),
 (46, 7471, 69.8, 2),
-(50, 7471, 7.6, 2),
+(50, 7471, 7.6, 2);
+
+--PARTE 31
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (52, 7471, 17.2, 1),
 (64, 7471, 7.2, 1),
 (69, 7471, 12.5, 1),
@@ -30999,7 +31134,11 @@ VALUES
 (57, 7725, 29.1, 3),
 (30, 7726, 13.5, 3),
 (43, 7726, 15.9, 1),
-(57, 7726, 29.1, 3),
+(57, 7726, 29.1, 3);
+
+--PARTE 32
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (59, 7726, 14.7, 3),
 (69, 7726, 37.5, 3),
 (80, 7726, 9.9, 1),
@@ -31999,7 +32138,11 @@ VALUES
 (65, 7970, 25.5, 3),
 (23, 7971, 10.8, 2),
 (30, 7971, 4.5, 1),
-(30, 7971, 4.5, 1),
+(30, 7971, 4.5, 1);
+
+--PARTE 33
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (25, 7972, 37.8, 2),
 (33, 7972, 1.5, 1),
 (51, 7972, 77.7, 3),
@@ -32999,7 +33142,11 @@ VALUES
 (18, 8204, 12.9, 1),
 (75, 8204, 9.9, 3),
 (1, 8205, 30, 3),
-(64, 8205, 14.4, 2),
+(64, 8205, 14.4, 2);
+
+--PARTE 34
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (6, 8206, 13.5, 3),
 (37, 8206, 11.9, 1),
 (42, 8206, 27.8, 2),
@@ -33999,7 +34146,11 @@ VALUES
 (16, 8449, 12.8, 2),
 (24, 8449, 26.7, 3),
 (38, 8449, 47.1, 1),
-(55, 8449, 27.98, 2),
+(55, 8449, 27.98, 2);
+
+--PARTE 35
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (64, 8449, 14.4, 2),
 (16, 8450, 6.4, 1),
 (19, 8450, 13, 2),
@@ -34999,7 +35150,11 @@ VALUES
 (27, 8704, 30, 3),
 (32, 8704, 39, 3),
 (40, 8704, 25.2, 2),
-(67, 8704, 21.6, 2),
+(67, 8704, 21.6, 2);
+
+--PARTE 36
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (16, 8705, 6.4, 1),
 (22, 8705, 7, 2),
 (33, 8705, 4.5, 3),
@@ -35999,7 +36154,11 @@ VALUES
 (51, 8939, 51.8, 2),
 (70, 8939, 16.5, 3),
 (3, 8940, 12, 2),
-(10, 8940, 13.8, 3),
+(10, 8940, 13.8, 3);
+
+--PARTE 37
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (26, 8940, 5, 1),
 (74, 8940, 41.4, 3),
 (26, 8941, 5, 1),
@@ -36999,7 +37158,11 @@ VALUES
 (7, 9201, 20.7, 3),
 (22, 9201, 10.5, 3),
 (16, 9202, 19.2, 3),
-(36, 9202, 8.8, 2),
+(36, 9202, 8.8, 2);
+
+--PARTE 38
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (55, 9202, 13.99, 1),
 (1, 9203, 20, 2),
 (20, 9203, 6, 2),
@@ -37999,7 +38162,11 @@ VALUES
 (19, 9454, 19.5, 3),
 (31, 9454, 3.5, 1),
 (45, 9454, 8, 1),
-(4, 9455, 3, 2),
+(4, 9455, 3, 2);
+
+--PARTE 39
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (54, 9455, 4.9, 1),
 (55, 9455, 41.97, 3),
 (20, 9456, 3, 1),
@@ -38999,7 +39166,11 @@ VALUES
 (36, 9705, 4.4, 1),
 (59, 9705, 14.7, 3),
 (62, 9705, 14.9, 1),
-(80, 9705, 19.8, 2),
+(80, 9705, 19.8, 2);
+
+--PARTE 40
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (7, 9706, 6.9, 1),
 (8, 9706, 57.4, 2),
 (11, 9706, 26.7, 3),
@@ -39999,7 +40170,11 @@ VALUES
 (28, 9948, 5, 1),
 (38, 9948, 94.2, 2),
 (14, 9949, 18, 3),
-(25, 9949, 18.9, 1),
+(25, 9949, 18.9, 1);
+
+--PARTE 41
+INSERT INTO G3.[PRODUCTOS X VENTA] (IdProducto, IdVenta, PrecioFinal, Cantidad)
+VALUES
 (32, 9949, 13, 1),
 (38, 9949, 94.2, 2),
 (62, 9949, 14.9, 1),
